@@ -37,3 +37,16 @@ function typeText() {
     // : currentText.substring(0, charIndex + 1);
 }
 typeText()
+
+const bar = document.getElementById("bar")
+const menu = document.getElementById("menu")
+
+bar.addEventListener("click", function(){
+    // menu.classList.toggle("active")
+    // console.log("clicked")
+    if(window.getComputedStyle(menu).display === "none"){
+        menu.style.display = "flex"
+    } else{
+        menu.style.display = "none"
+    }
+})
