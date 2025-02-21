@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+span {
+    font-weight: bold;
+}
+/* header  */
+.nav{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+    color: whitesmoke;
+    box-shadow: 0 6px 40px rgba(0,0,0,0.5);
+    background-color: rgb(12, 99, 180);
+}
+.nama{
+    display: flex;
+    align-items: center;
+}
+.nama img{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.nama, .menu{
+    flex: 1;
+}
+.nama span{
+    font-weight: bold;
+}
+
+.menu{
+    display: flex;
+    justify-content: end;
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 12px 5px;
+    width: 125px;
+}
+
+.menu a:hover{
+    background-color: rgb(6, 67, 146);
+}
+.menu a i{
+    margin-right: 10px;
+}
+
+.bar{
+    display: none;
+    /* overflow: hidden; */
+}
+
+
+/* content  */
+main{
+    color: whitesmoke;
+}
+#home{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* justify-items: center; */
+    background-image: url(assets/dark-background-with-bright-blue-line.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+.cta, .maskot{
+    flex: 1;
+}
+.cta{
+    /* text-align: end; */
+}
+.maskot{
+    /* text-align: start; */
+}
+.cta h1{
+    padding: 0 50px;
+    color: white;
+    /* text-shadow: -1px 1px 0 white, 1px 1px 0 white; */
+    /* color: rgb(0, 60, 255); */
+}
+.cta p{
+    padding: 0 100px;
+    margin: 20px;
+
+}
+.cta a{
+    margin: auto;
+    position: relative;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(13, 90, 179);
+    border-radius: 50px;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+.cta a:hover{
+    background-color: rgb(26, 112, 241);
+}
+.maskot img{
+    width: 400px;
+}
+
+
+#about{
+    background-color: #111;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.about-content{
+    display: flex;
+    align-items: center;
+}
+.aboutus, .aboutimg{
+    margin: 30px;
+}
+.aboutus{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+    flex: 1;
+}
+.aboutimg{
+    flex: 1;
+}
+.aboutus{
+    background-color: #222;
+    border: black 2px solid;
+    border-radius: 20px;
+    padding: 20px 50px 40px;
+    height: fit-content;
+    text-align: justify;
+}
+.aboutus h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.aboutimg img{
+    width: 500px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 6px 4px rgba(0,0,0,0.5);
+}
+.visimisi{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+.vm{
+    border-radius: 10px;
+    width: 350px;
+    /* height: 300px; */
+    box-shadow: 0 6px 4px rgba(0,0,0,0.5);
+    border: black 2px solid;
+    padding: 20px;
+    background-color: #222;
+}
+.vm ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    list-style: none;
+}
+.vm ul li{
+    border-width: 500px;
+    border-bottom: 1px black solid ;
+    place-content: center;
+    flex: 1;
+}
+
+
+#service{
+    background-color: #222;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.service-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #222;
+    margin-top: 50px;
+    gap: 50px;
+}
+.service-item{
+    width: 350px;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0 6px 4px rgba(0,0,0,0.5);
+    background-color: #333;
+    padding: 25px 0 10px;
+
+}
+.paket{
+    padding-bottom: 10px;
+}
+.paket-isi ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+
+}
+.paket-isi ol li{
+    border-bottom: 2px solid white;
+    padding: 15px;
+    width: fit-content;
+    max-width: 250px;
+}
+
+
+#contact{
+    height: 500px;
+    background-color: #111;
+}
+
+
+/* footer */
+.foot{
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    background-color: #333;
+    padding: 10px 20px;
+    gap: 40px;
+}
+.foot h3{
+    margin: 5px 0 10px;
+    width: max-content;
+    border-bottom: red 2px solid;
+}
+.company{
+    /* justify-content: space-between; */
+}
+.company span{
+    text-align: justify;
+}
+.company .sosmed{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.company .sosmed a{
+    text-align: center;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: #222;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px 10px 0 0;
+    transition: all 0.3s ease;
+}
+.company .sosmed a:hover{
+    transform: translateY(-5px);
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.link, .services{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.link a, .services a{
+    margin: 5px 0;
+    width: max-content;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+.link a:hover, .services a:hover{
+    transform: translateX(7px);
+}
+.address{
+    /* justify-content: space-between; */
+}
+.address iframe{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.address p i{
+    text-align: center;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: #222;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px 10px 0 0;
+}
+.address .jamap{
+    display: flex;
+    flex: 1;
+}
+.address .jamap .jalan{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+.address .jamap .jalan p{
+    flex: 1;
+}
+.copyright{
+    height: 70px;
+    align-content: center;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #222;
+}
+
+@media (max-width: 768px) {
+    .menu{
+        display: none;
+        overflow: hidden;
+    }
+    .bar{
+        display: block;
+    }
+
+    .foot{
+        flex-direction: column;
+    }
+}
