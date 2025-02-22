@@ -695,12 +695,14 @@ h1{
     }
     .visimisi{
         flex-direction: column;
+        padding: 0 30px;
     }
 
     /* service responsif */
     .service-content{
         align-items: center;
         flex-direction: column;
+        padding: 0 30px;
     }
     .galery{
         padding: 20px;
