@@ -40,13 +40,36 @@ typeText()
 
 const bar = document.getElementById("bar")
 const menu = document.getElementById("menu")
+const menuItems = document.querySelectorAll(".menu a")
+const i = document.getElementById("i")
+
 
 bar.addEventListener("click", function(){
-    // menu.classList.toggle("active")
-    // console.log("clicked")
-    if(window.getComputedStyle(menu).display === "none"){
-        menu.style.display = "flex"
-    } else{
-        menu.style.display = "none"
+    menu.classList.toggle("active")
+
+    if(menu.classList.contains("active")){
+        i.classList.remove("fa-bars")
+        i.classList.add("fa-times")
+    }else{
+        i.classList.remove("fa-times")
+        i.classList.add("fa-bars")
     }
+    
+
+})
+
+document.addEventListener("click", function(event) {
+    if (menu.classList.contains("active") && !menu.contains(event.target) && !bar.contains(event.target)) {
+        menu.classList.remove("active");
+        i.classList.remove("fa-times");
+        i.classList.add("fa-bars");
+    }
+});
+
+menuItems.forEach((menuItem) => {
+    menuItem.addEventListener("click", function(){
+        menu.classList.remove("active")
+        i.classList.remove("fa-times")
+        i.classList.add("fa-bars")
+    })
 })
