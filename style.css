@@ -773,7 +773,7 @@ h1{
         flex-direction: column;
     }
     .foot .jamap{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .address iframe{
         padding-top: 20px;
