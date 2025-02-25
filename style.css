@@ -160,7 +160,7 @@ main{
 }
 .about-content{
     display: flex;
-    align-itwma: center;
+    align-items: center;
 }
 .about-content span{
     font-weight: bold;
