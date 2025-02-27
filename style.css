@@ -160,6 +160,8 @@ main{
 }
 .about-content{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about-content span{
     font-weight: bold;
